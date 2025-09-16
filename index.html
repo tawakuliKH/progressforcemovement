@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -51,9 +52,8 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item donate-wrapper">
-  <a class="nav-link donate-btn" href="#donate">Donate</a>
-</li>
-
+              <a class="nav-link donate-btn" href="#donate">Donate</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -61,24 +61,24 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <h1>Progressive Forces of Afghanistan</h1>
-        <p>
-          Defending women's rights, promoting gender equality, and fighting for
-          justice
-        </p>
-        <a href="#donate" class="btn btn-primary btn-lg mt-4"
-          >Support Our Cause</a
-        >
-      </div>
-    </section>
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">Progressive Forces of Afghanistan</h1>
+      <p class="animate__animated animate__fadeIn animate__delay-1s">
+        Defending women's rights, promoting gender equality, and fighting for
+        justice
+      </p>
+      <a href="#donate" class="btn btn-primary btn-lg mt-4 animate__animated animate__fadeInUp animate__delay-2s"
+        >Support Our Cause</a
+      >
+    </div>
+  </section>
 
     <!-- About Us -->
-    <section id="about" class="container py-5">
+    <section id="about" class="container py-5 about-section">
       <h2 class="section-title">Our Leadership Team</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Mawloda Tawana"
@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Zohal Rad"
@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Fatima Farahmand"
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Humaira Ibrahim"
@@ -141,7 +141,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Qandi Safi"
@@ -157,7 +157,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="employee-card bg-white shadow-sm">
+          <div class="employee-card bg-white shadow-sm animate__animated">
             <img
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               alt="Mohammad Nasim Hamza"
@@ -175,7 +175,7 @@
       </div>
 
       <!-- Who We Are -->
-      <section id="who-we-are" class="py-5 bg-light-custom">
+      <section id="who-we-are" class="py-5 who-we-are-section">
         <div class="container">
           <h2 class="section-title">Who We Are</h2>
           <div class="row align-items-center">
@@ -200,6 +200,22 @@
                 Afghan women who have been stripped of their fundamental human
                 rights by the repressive Taliban regime.
               </p>
+              <div class="impact-stats mt-4">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="impact-stat">
+                      <h3>18+</h3>
+                      <p>Countries with active members</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="impact-stat">
+                      <h3>500+</h3>
+                      <p>Women supported</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="card border-0 shadow-lg">
@@ -220,55 +236,60 @@
       </section>
 
       <!-- Mission & Purpose -->
-      <section id="mission" class="container py-5">
-        <h2 class="section-title">Mission & Purpose</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="mission-card bg-white shadow-sm">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                  alt="Equality"
-                />
+      <section id="mission" class="py-5 mission-section">
+        <div class="container">
+          <h2 class="section-title">Mission & Purpose</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="mission-card bg-white shadow-sm animate__animated">
+                <div class="card-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Equality"
+                  />
+                </div>
+                <h5>Commitment to Equality</h5>
+                <p>
+                  We act for the elimination of all forms of gender-based
+                  discrimination and promote equality between women and men in all
+                  spheres of life. Our initiatives focus on legal reforms, awareness
+                  campaigns, and community engagement to build a more equitable society.
+                </p>
               </div>
-              <h5>Commitment to Equality</h5>
-              <p>
-                We act for the elimination of all forms of gender-based
-                discrimination and promote equality between women and men in all
-                spheres of life.
-              </p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="mission-card bg-white shadow-sm">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                  alt="Combating Violence"
-                />
+            <div class="col-md-4">
+              <div class="mission-card bg-white shadow-sm animate__animated">
+                <div class="card-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Combating Violence"
+                  />
+                </div>
+                <h5>Combating Violence</h5>
+                <p>
+                  We are committed to preventing, addressing, and eradicating all
+                  forms of gender-based violence against women and girls through
+                  advocacy and accountability initiatives. We provide safe spaces,
+                  legal support, and psychological assistance to survivors.
+                </p>
               </div>
-              <h5>Combating Violence</h5>
-              <p>
-                We are committed to preventing, addressing, and eradicating all
-                forms of gender-based violence against women and girls through
-                advocacy and accountability initiatives.
-              </p>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="mission-card bg-white shadow-sm">
-              <div class="card-img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                  alt="Equal Opportunities"
-                />
+            <div class="col-md-4">
+              <div class="mission-card bg-white shadow-sm animate__animated">
+                <div class="card-img-container">
+                  <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                    alt="Equal Opportunities"
+                  />
+                </div>
+                <h5>Equal Opportunities</h5>
+                <p>
+                  We strive to ensure equal access for women and girls to quality
+                  education, employment opportunities, political participation,
+                  and public decision-making. Our scholarship programs and vocational
+                  training initiatives empower women to become self-sufficient leaders.
+                </p>
               </div>
-              <h5>Equal Opportunities</h5>
-              <p>
-                We strive to ensure equal access for women and girls to quality
-                education, employment opportunities, political participation,
-                and public decision-making.
-              </p>
             </div>
           </div>
         </div>
@@ -280,7 +301,7 @@
           <h2 class="section-title" style="color: white">Our Future Vision</h2>
           <div class="row">
             <div class="col-md-6">
-              <div class="vision-item">
+              <div class="vision-item animate__animated">
                 <div class="card-img-container">
                   <img
                     src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -291,12 +312,13 @@
                 <p>
                   We envision an Afghanistan free from discrimination, where
                   women and men enjoy equal rights and opportunities in all
-                  aspects of life.
+                  aspects of life. A society where gender no longer determines
+                  one's destiny or limits one's potential.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="vision-item">
+              <div class="vision-item animate__animated">
                 <div class="card-img-container">
                   <img
                     src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -307,12 +329,13 @@
                 <p>
                   We dream of a future where every girl has access to quality
                   education and the opportunity to pursue her dreams without
-                  restrictions.
+                  restrictions. Education is the foundation for empowerment and
+                  social transformation.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="vision-item">
+              <div class="vision-item animate__animated">
                 <div class="card-img-container">
                   <img
                     src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -323,12 +346,13 @@
                 <p>
                   We work toward a future where women actively participate in
                   decision-making processes and hold leadership positions at all
-                  levels.
+                  levels. Women's perspectives are essential for creating inclusive
+                  policies and sustainable development.
                 </p>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="vision-item">
+              <div class="vision-item animate__animated">
                 <div class="card-img-container">
                   <img
                     src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -338,7 +362,8 @@
                 <h4>Peaceful Afghanistan</h4>
                 <p>
                   We envision a peaceful Afghanistan where all citizens can live
-                  with dignity, security, and hope for a brighter future.
+                  with dignity, security, and hope for a brighter future. A nation
+                  where diversity is celebrated and human rights are protected for all.
                 </p>
               </div>
             </div>
@@ -347,12 +372,12 @@
       </section>
     </section>
     <!-- Our Values -->
-    <section id="values" class="py-5 bg-light-custom">
+    <section id="values" class="py-5 values-section">
       <div class="container">
         <h2 class="section-title">Our Values</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="value-card bg-white shadow-sm">
+            <div class="value-card bg-white shadow-sm animate__animated">
               <div class="card-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -362,12 +387,14 @@
               <h5>Right to Choice</h5>
               <p>
                 Supporting the freedom of women and girls in personal,
-                professional, and social decision-making.
+                professional, and social decision-making. We believe every woman
+                should have autonomy over her life, body, and future without
+                coercion or limitation.
               </p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="value-card bg-white shadow-sm">
+            <div class="value-card bg-white shadow-sm animate__animated">
               <div class="card-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -377,12 +404,14 @@
               <h5>Equality & Non-Discrimination</h5>
               <p>
                 Supporting full equality between women and men and eliminating
-                all forms of gender-based discrimination.
+                all forms of gender-based discrimination. We challenge patriarchal
+                norms and work to create systems that treat everyone with equal
+                dignity and respect.
               </p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="value-card bg-white shadow-sm">
+            <div class="value-card bg-white shadow-sm animate__animated">
               <div class="card-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -392,7 +421,9 @@
               <h5>Collaboration & Solidarity</h5>
               <p>
                 Building national and international cooperation to promote
-                women's rights and strengthen social solidarity.
+                women's rights and strengthen social solidarity. We believe in
+                the power of collective action and diverse partnerships to
+                create lasting change.
               </p>
             </div>
           </div>
@@ -401,7 +432,7 @@
     </section>
 
     <!-- Our Story -->
-    <section id="story" class="container py-5">
+    <section id="story" class="container py-5 story-section">
       <h2 class="section-title">How We Started</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -439,17 +470,21 @@
             employment, and meaningful participation in social and political
             life.
           </p>
+          <div class="milestone-highlight mt-4 p-3">
+            <h5><i class="fas fa-star me-2"></i> Key Milestone</h5>
+            <p class="mb-0">Officially registered as a non-profit organization in Germany in September 2022, expanding our advocacy reach across Europe.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Issues -->
-    <section id="issues" class="py-5 bg-light-custom">
+    <section id="issues" class="py-5 issues-section">
       <div class="container">
         <h2 class="section-title">Issues We Address</h2>
         <div class="row">
           <div class="col-md-6">
-            <div class="issue-card bg-white">
+            <div class="issue-card bg-white animate__animated">
               <div class="issue-img">
                 <img
                   src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -461,13 +496,15 @@
                 <p>
                   We fight against all forms of gender-based violence and
                   discrimination against women and girls, which remains
-                  pervasive in Afghanistan under Taliban rule.
+                  pervasive in Afghanistan under Taliban rule. Our initiatives
+                  include emergency shelters, legal aid, and awareness campaigns
+                  to break the cycle of violence.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="issue-card bg-white">
+            <div class="issue-card bg-white animate__animated">
               <div class="issue-img">
                 <img
                   src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -479,13 +516,14 @@
                 <p>
                   We work to restore access to education for women and girls who
                   have been systematically excluded from schools and
-                  universities by the Taliban regime.
+                  universities by the Taliban regime. Through underground schools
+                  and online education platforms, we're ensuring learning continues.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="issue-card bg-white">
+            <div class="issue-card bg-white animate__animated">
               <div class="issue-img">
                 <img
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -497,13 +535,14 @@
                 <p>
                   We oppose the suppression of civil and political freedoms,
                   including freedom of expression and political participation
-                  for women in Afghanistan.
+                  for women in Afghanistan. We advocate for women's inclusion in
+                  peace processes and future governance structures.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="issue-card bg-white">
+            <div class="issue-card bg-white animate__animated">
               <div class="issue-img">
                 <img
                   src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -515,7 +554,8 @@
                 <p>
                   We combat religious and ideological extremism that limits
                   women's rights and freedoms, working to promote moderate and
-                  inclusive interpretations of faith.
+                  inclusive interpretations of faith. Our theological dialogues
+                  highlight the compatibility of Islam with gender equality.
                 </p>
               </div>
             </div>
@@ -525,42 +565,94 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container py-5">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="card shadow">
-            <div class="card-body p-5">
-              <h4 class="card-title text-center mb-4">Get In Touch</h4>
-              <p class="text-center mb-4">
-                Reach out to us for collaboration, information, or support
-              </p>
-              <div class="row">
-                <div class="col-md-6">
-                  <h5><i class="fas fa-user me-2"></i>Director</h5>
-                  <p>Mawloda Tawana</p>
-
-                  <h5><i class="fas fa-envelope me-2"></i>Email</h5>
-                  <p>pfoam.afghanistan@gmail.com</p>
-
-                  <h5><i class="fas fa-phone me-2"></i>Phone</h5>
-                  <p>+49 1573 1629920</p>
-                </div>
-                <div class="col-md-6">
-                  <h5><i class="fab fa-linkedin me-2"></i>LinkedIn</h5>
-                  <p>
-                    <a
-                      href="https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
-                      target="_blank"
-                      >Connect with us</a
-                    >
-                  </p>
-
-                  <h5><i class="fas fa-map-marker-alt me-2"></i>Address</h5>
-                  <p>
-                    Haupstraße 126, 26810 Westoverledingen, Niedersachsen
-                    Germany
-                  </p>
+    <section id="contact" class="py-5 contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="text-center mb-5 lead">Get in touch with us for collaboration, information, or support</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card shadow contact-card">
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="contact-info text-center">
+                      <h4 class="mb-4">Let's Connect</h4>
+                      <p>We welcome partnerships, media inquiries, and support from individuals and organizations who share our vision for a more equitable Afghanistan.</p>
+                      
+                      <div class="row mt-5">
+                        <div class="col-md-4">
+                          <div class="contact-detail">
+                            <div class="icon-box">
+                              <i class="fas fa-user"></i>
+                            </div>
+                            <div class="detail-content">
+                              <h5>Director</h5>
+                              <p>Mawloda Tawana</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <div class="contact-detail">
+                            <div class="icon-box">
+                              <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail-content">
+                              <h5>Email</h5>
+                              <p>pfoam.afghanistan@gmail.com</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <div class="contact-detail">
+                            <div class="icon-box">
+                              <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="detail-content">
+                              <h5>Phone</h5>
+                              <p>+49 1573 1629920</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row mt-4">
+                        <div class="col-md-6">
+                          <div class="contact-detail">
+                            <div class="icon-box">
+                              <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="detail-content">
+                              <h5>LinkedIn</h5>
+                              <p>
+                                <a
+                                  href="https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
+                                  target="_blank"
+                                  >Connect with us</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <div class="contact-detail">
+                            <div class="icon-box">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                              <h5>Address</h5>
+                              <p>
+                                Haupstraße 126, 26810 Westoverledingen, Niedersachsen
+                                Germany
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -577,8 +669,8 @@
           Your contribution helps us fight for women's rights and create change
         </p>
         <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="card shadow">
+          <div class="col-lg-10">
+            <div class="card shadow donation-card">
               <div class="card-body p-5">
                 <div class="row">
                   <div class="col-md-6">
@@ -591,6 +683,7 @@
                       <li>Awareness campaigns and advocacy efforts</li>
                       <li>Legal and social support for women at risk</li>
                       <li>Organizing protests and international lobbying</li>
+                      <li>Emergency aid for women in crisis situations</li>
                     </ul>
 
                     <div class="donation-options mb-4">
@@ -778,86 +871,22 @@
     <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-4 mb-md-0">
+          <div class="col-md-6">
             <h5>Progressive Forces of Afghanistan</h5>
             <p>
               Defending women's rights, promoting gender equality, and fighting
               for justice
             </p>
-            <div class="d-flex gap-3 mt-3">
-              <a href="#" class="text-white"
-                ><i class="fab fa-twitter fa-lg"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-facebook fa-lg"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-instagram fa-lg"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
-                class="text-white"
-                ><i class="fab fa-linkedin fa-lg"></i
-              ></a>
-            </div>
           </div>
-          <div class="col-md-4 mb-4 mb-md-0">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#about" class="text-white text-decoration-none"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="#mission" class="text-white text-decoration-none"
-                  >Our Mission</a
-                >
-              </li>
-              <li>
-                <a href="#issues" class="text-white text-decoration-none"
-                  >Key Issues</a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="text-white text-decoration-none"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a href="#donate" class="text-white text-decoration-none"
-                  >Donate</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Contact Information</h5>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fas fa-map-marker-alt me-2"></i> Haupstraße 126, 26810
-                Westoverledingen, Germany
-              </li>
-              <li><i class="fas fa-phone me-2"></i> +49 1573 1629920</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i> pfoam.afghanistan@gmail.com
-              </li>
-            </ul>
-          </div>
-        </div>
-        <hr class="my-4" />
-        <div class="row">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <p class="mb-0">
+          <div class="col-md-6 text-md-end">
+            <p>
               &copy; 2023 Progressive Forces of Afghanistan. All rights
               reserved.
             </p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <a href="#" class="text-white text-decoration-none me-3"
-              >Privacy Policy</a
-            >
-            <a href="#" class="text-white text-decoration-none">Terms of Use</a>
+            <p>
+              <a href="#contact" class="text-white me-3">Contact Us</a>
+              <a href="#" class="text-white">Privacy Policy</a>
+            </p>
           </div>
         </div>
       </div>
@@ -865,63 +894,52 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Donation option selection
-        const donationOptions = document.querySelectorAll(".donation-option");
-        const customAmountField = document.querySelector(".custom-amount");
+      // Donation amount selection
+      document.querySelectorAll(".donation-option").forEach((option) => {
+        option.addEventListener("click", function () {
+          document
+            .querySelectorAll(".donation-option")
+            .forEach((opt) => opt.classList.remove("selected"));
+          this.classList.add("selected");
 
-        donationOptions.forEach((option) => {
-          option.addEventListener("click", function () {
-            donationOptions.forEach((opt) => opt.classList.remove("selected"));
-            this.classList.add("selected");
-
-            if (this.dataset.amount === "custom") {
-              customAmountField.style.display = "block";
-            } else {
-              customAmountField.style.display = "none";
-            }
-          });
-        });
-
-        // Payment method selection
-        const paymentMethods = document.querySelectorAll(".payment-method");
-
-        paymentMethods.forEach((method) => {
-          method.addEventListener("click", function () {
-            paymentMethods.forEach((m) => m.classList.remove("selected"));
-            this.classList.add("selected");
-            const radioInput = this.querySelector('input[type="radio"]');
-            if (radioInput) {
-              radioInput.checked = true;
-            }
-          });
-        });
-
-        // Form submission
-        const donateButton = document.querySelector(".btn-primary");
-        donateButton.addEventListener("click", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you for your donation! You will be redirected to our secure payment portal."
-          );
-          // In a real implementation, this would submit the form to a payment processor
+          if (this.dataset.amount === "custom") {
+            document.querySelector(".custom-amount").style.display = "block";
+          } else {
+            document.querySelector(".custom-amount").style.display = "none";
+          }
         });
       });
-    </script>
 
-    <script>
-      // Automatically close navbar on link click (mobile)
-      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-      const navbarCollapse = document.querySelector(".navbar-collapse");
+      // Payment method selection
+      document.querySelectorAll(".payment-method").forEach((method) => {
+        method.addEventListener("click", function () {
+          document
+            .querySelectorAll(".payment-method")
+            .forEach((m) => m.classList.remove("selected"));
+          this.classList.add("selected");
+          this.querySelector("input[type='radio']").checked = true;
+        });
+      });
 
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          if (navbarCollapse.classList.contains("show")) {
-            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-              toggle: true,
+      // Animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const animatedElements = document.querySelectorAll(
+          ".employee-card, .mission-card, .value-card, .issue-card, .vision-item"
+        );
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate__fadeInUp");
+                observer.unobserve(entry.target);
+              }
             });
-            bsCollapse.hide();
-          }
+          },
+          { threshold: 0.1 }
+        );
+        animatedElements.forEach((element) => {
+          observer.observe(element);
         });
       });
     </script>
