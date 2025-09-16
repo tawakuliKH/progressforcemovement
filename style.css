@@ -1,3 +1,56 @@
+ 
+ /* Desktop / Laptop */
+@media (min-width: 992px) {
+  .navbar-nav {
+    position: relative;
+  }
+
+  .donate-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .donate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    background-color: #ffc107; /* bright yellow */
+    color: #000;
+    font-weight: bold;
+    border-radius: 0;
+  }
+
+  .donate-btn:hover {
+    background-color: #e6b800;
+    color: #000;
+  }
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .donate-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .donate-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #ffc107;
+    font-weight: bold;
+  }
+
+  .donate-btn:hover {
+    background-color: #e6b800;
+    color: #000;
+  }
+}
+
  :root {
       --primary-color: #0b6b6b;
       --primary-light: #0e8a8a;
