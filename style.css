@@ -51,6 +51,19 @@ body {
 .navbar .container {
   padding: 0 15px;
 }
+.brand-text-sm {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .brand-text {
+    display: none;
+  }
+  .brand-text-sm {
+    display: inline;
+  }
+}
+
 
 .navbar-brand {
   display: flex;

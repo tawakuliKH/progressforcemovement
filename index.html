@@ -21,9 +21,11 @@
       <div class="container">
         <div class="logo">
           <a class="navbar-brand" href="#">
-            <img src="assets/logo.png" alt="Logo" />
-            <span>Progressive Forces of Afghanistan</span>
-          </a>
+  <img src="assets/logo.png" alt="Logo" />
+  <span class="brand-text">Progressive Forces of Afghanistan</span>
+  <span class="brand-text-sm">PFA</span>
+</a>
+
         </div>
 
         <button
@@ -943,5 +945,20 @@
         });
       });
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navbarCollapse.classList.contains("show")) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+  });
+</script>
+
   </body>
 </html>
